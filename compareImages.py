@@ -15,6 +15,7 @@ while True:
 	ret,img2=cap.read()
 	cv2.imshow('video',img2)
 	img3=cv2.subtract(img1,img2)
+	cv2.imshow('diff',img3)
 	countOff=0
 	for i in range(20,415):
 		for j in range(138,534):
